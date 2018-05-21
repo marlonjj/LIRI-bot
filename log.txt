@@ -52,7 +52,7 @@ movie-this,
 Full Metal Jacket
 1987
 R
-[object Object]
+No Rotten Tomatoes Rating Available
 UK, USA
 English, Vietnamese
 A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.
@@ -65,3 +65,19 @@ Backstreet Boys
 I Want It That Way
 https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=6be19639b815469f8691bdb300d38a02
 The Hits--Chapter One
+
+spotify-this-song,
+Ace of Base
+The Sign
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=6be19639b815469f8691bdb300d38a02
+The Sign (US Album) [Remastered]
+
+movie-this,
+Mr. Nobody
+2009
+R
+No Rotten Tomatoes Rating Available
+Belgium, Germany, Canada, France, USA, UK
+English, Mohawk
+A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham

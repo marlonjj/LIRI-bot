@@ -98,18 +98,26 @@ function movieThis(){
 
         if (!error && response.statusCode === 200) {
             var myMovie = JSON.parse(body);
+            var ratingRT = "No Rotten Tomatoes Rating Available";
             console.log(myMovie.Title);
             console.log(myMovie.Year);
             console.log(myMovie.Rated);
-            console.log(myMovie.Ratings[1]);
+            for(var o = 0; o < myMovie.Ratings.length; o++){
+                var mMR = myMovie.Ratings[o];
+                for (props in mMR){
+                    if (props == "Rotten Tomatoes"){
+                        ratingRT = "Rotten Tomatoes: " + mMR.Value;
+                        console.log(ratingRT);
+                    }
+                }
+            }
             console.log(myMovie.Country);
             console.log(myMovie.Language);
             console.log(myMovie.Plot);
             console.log(myMovie.Actors);
 
-            fs.appendFile("./log.txt", ("\n" + myMovie.Title + "\n" + myMovie.Year
-              + "\n" + myMovie.Rated + "\n" + myMovie.Ratings[1] + "\n" + myMovie.Country
-              + "\n" + myMovie.Language + "\n" + myMovie.Plot + "\n" + myMovie.Actors), function(err) {
+            fs.appendFile("./log.txt", ("\n" + myMovie.Title + "\n" + myMovie.Year + "\n" + myMovie.Rated + "\n" + ratingRT
+            + "\n" + myMovie.Country + "\n" + myMovie.Language + "\n" + myMovie.Plot + "\n" + myMovie.Actors), function(err) {
                 if (err) {
                     console.log(err);
                 }
